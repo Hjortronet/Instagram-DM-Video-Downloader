@@ -82,7 +82,8 @@ function parseAndCopy(manifestXml: string) {
     }
 
     if (videoUrl && audioUrl) {
-        const command = `ffmpeg -i "${videoUrl}" -i "${audioUrl}" -c copy "hd_video.mp4"`;
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+        const command = `ffmpeg -i "${videoUrl}" -i "${audioUrl}" -c copy "%USERPROFILE%\\Downloads\\insta_dm_${timestamp}.mp4"`;
         window.postMessage({ type: 'INSTA_FFMPEG_CLIPBOARD', command }, '*');
         console.log("%c✅ SUCCESS! Command sent to clipboard.", "color: lime; font-weight: bold; font-size: 16px;");
     } else {
