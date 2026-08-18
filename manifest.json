@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Instagram DM Video Downloader",
+  "version": "1.0",
+  "description": "Automatically copies FFmpeg commands for HD Instagram DM videos.",
+  "permissions": [
+    "clipboardWrite"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["interceptor.js"],
+      "matches": ["*://*.instagram.com/*"]
+    }
+  ]
+}
