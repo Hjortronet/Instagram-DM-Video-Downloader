@@ -51,7 +51,7 @@ Restart your terminal and type `ffmpeg -version`. If a bunch of text pops up, yo
 1. Download this repository as a `.zip` file and extract it to a folder on your computer.
 2. Open Chrome or Brave and navigate to `chrome://extensions/`.
 3. Toggle **Developer mode** on in the top right corner.
-4. Click **Load unpacked** in the top left and select the extracted folder.
+4. Click Load unpacked in the top left. Select the extracted folder. (Note: If you downloaded this via GitHub's ZIP button, you may need to open the first folder and select the inner folder so Chrome can see the manifest.json file).
 5. Open an Instagram Direct Message on your computer and hit play on a video.
 6. A green success message will appear in your `F12` Developer Console, and the complete download command will be instantly copied to your clipboard.
 7. Open your terminal, press `Ctrl + V` (or `Cmd + V`), and press Enter.
