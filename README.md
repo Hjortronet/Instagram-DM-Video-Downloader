@@ -1,3 +1,5 @@
+Disclaimer: Entirely made with Gemini.
+
 # Instagram DM Video Downloader 🎬
 
 A Chrome/Brave extension that bypasses Meta's DRM and DASH streaming architecture to let you download high-definition Instagram Direct Message videos.
